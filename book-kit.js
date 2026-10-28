@@ -7,7 +7,7 @@
  *   book.chapter(0).keyPoints;
  *   var p = book.progress(store);        // mark chapters read, keep notes
  *
- * MIT License. (c) 2026 Dr Sohil Momin.
+ * PolyForm Noncommercial 1.0.0. (c) 2026 Dr Sohil Momin.
  */
 (function (root, factory) {
   if (typeof module === "object" && module.exports) module.exports = factory();
