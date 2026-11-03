@@ -12,6 +12,11 @@ header,main,footer{max-width:760px;margin:0 auto;padding:24px 20px}h1{margin:0 0
 </style></head><body>
 <header><h1>book-kit</h1>
 <p class="mut">The companion-app-from-a-book pattern. Zero dependencies. One file. MIT.</p>
+<figure style="margin:26px 0 0;text-align:center">
+  <img src="assets/concept.svg" alt="A diagram of what this kit does"
+       style="width:100%;max-width:320px;height:auto">
+</figure>
+
 <p><a class="btn" href="https://github.com/drsamonline/book-kit">Source</a></p></header>
 <main><div class="grid"><div class="card"><h3>chapters / key points / practices</h3><p>chapters / key points / practices</p></div><div class="card"><h3>flashcards</h3><p>flashcards</p></div><div class="card"><h3>search inside the book</h3><p>search inside the book</p></div><div class="card"><h3>reading progress + notes</h3><p>reading progress + notes</p></div></div>
 <p class="mut">Verified: 16 tests pass. Extracted from the drsamonline apps that repeat this capability.</p></main>
@@ -346,6 +351,19 @@ window.__importAll = function () {
 /* A FOCUS RING, because a keyboard you cannot see is not access. Most of these apps
    removed the default outline and never replaced it. */
 :focus-visible{outline:2px solid currentColor;outline-offset:2px}
+
+  /* ---------- light theme ----------
+     Added so the page reads on paper. It overrides the page's own variables and
+     nothing else — no markup, no layout, no type. */
+  :root, html {
+    color-scheme: light;
+    --bg: #f7f6f2;
+    --card: #ffffff;
+    --ink: #14161a;
+    --mut: #5c6470;
+    --line: #e2ddd2;
+    --acc: #178840;
+  }
 </style>
 <script>
 /* KEYBOARD ACCESS — hooked at document, like the undo is hooked at the store.
