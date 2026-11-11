@@ -8,15 +8,20 @@ that is not there.
 
 ```js
 <script src="book-kit.js"></script>
-Book.load(...)
+Book.chapter(...)
 // or: const Book = require('./book-kit.js')
 ```
 
-## The surface (1 entries)
+## The surface (6 entries)
 
 | Name | Arguments | What it does |
 |---|---|---|
-| `Book.load` | `(json)` | — |
+| `Book.chapter` | `(i)` | — |
+| `Book.chapterByTitle` | `(t)` | — |
+| `Book.keyPoints` | `(i)` | — |
+| `Book.practices` | `(i)` | — |
+| `Book.search` | `(term)` | — |
+| `Book.progress` | `(store, key)` | Reading progress + notes, backed by any {get,set} store (web-kit fits). |
 
 ## Notes
 
